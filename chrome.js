@@ -274,7 +274,7 @@ instance.web.CrashManager = instance.web.Class.extend({
         }
         new instance.web.Dialog(this, {
             size: 'medium',
-            title: "Odoo " + (_.str.capitalize(error.type) || "Warning"),
+            title: "SSSAGRO " + (_.str.capitalize(error.type) || "Warning"),
             buttons: [
                 {text: _t("Ok"), click: function() { this.parents('.modal').modal('hide'); }}
             ],
@@ -289,7 +289,7 @@ instance.web.CrashManager = instance.web.Class.extend({
             this.parents('.modal').modal('hide');
         };
         new instance.web.Dialog(this, {
-            title: "Odoo " + _.str.capitalize(error.type),
+            title: "SSSAGRO " + _.str.capitalize(error.type),
             buttons: buttons
         }, QWeb.render('CrashManager.error', {session: instance.session, error: error})).open();
     },
